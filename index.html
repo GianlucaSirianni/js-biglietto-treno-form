@@ -12,17 +12,41 @@
 <body>
 
     <form>
-        <label for="firstName">Name:</label>
-        <input type="text" id="firstName" name="firstName" placeholder="Write your Name">
+        <label for="nameUser">Name:</label>
+        <input type="text" id="nameUser" name="nameUser" placeholder="Write your Name">
 
-        <label for="firstName">Km:</label>
-        <input type="text" id="firstName" name="firstName" placeholder="How many Km you need?">
+        <label for="km">Km:</label>
+        <input type="text" id="km" name="km" placeholder="How many Km you need?">
 
-        <a class="submitButton" href="#" onclick="submitForm()"> Submit Here</a>  
+        <label for="cars">Choose your age bracket:</label>
+
+        <select id="ageGroup">
+            <option value="minor">I'm a Minor (0-17yo)</option>
+            <option value="adult">I'm an Adult (18-65yo)</option>
+            <option value="senior">I'm a Senior (>65yo)</option>
+        </select>
+
+        <a class="submitButton" href="#" onclick="submitForm()"> Submit Here</a>
 
     </form>
 
+    <h3 id="numeroacaso1">
 
+    </h3>
+
+    <h3 id="numeroacaso2">
+        
+    </h3>
+
+    <h2 id="nameBro">
+
+    </h2>
+
+    <h1 id="response">
+
+    </h1>
+    
+    
     <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 
