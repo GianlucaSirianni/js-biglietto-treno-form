@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
-    background-color: rgb(255, 0, 251);
+    background-color: #B91450;
     height: 100vh;
 }
 
@@ -46,12 +49,12 @@ form{
 
 .formSection label{
     margin-bottom: 1rem;
-    color: red;
+    color: #B91450;
     text-align: center;
 }
 
 input, select{
-    border-color: red;
+    color: #B91450;
     padding: 5px;
     text-align: center;
 }
@@ -113,12 +116,12 @@ input, select{
 /*----------------*/
 
 .submitButton{
-    color: red;
+    color: #B91450;
     padding: 0.3rem;
     background-color: lightgray;
     border-color: grey;
 }
 
 .submitButton:hover{
-    border-color: red;
+    color: #B91450;
 }

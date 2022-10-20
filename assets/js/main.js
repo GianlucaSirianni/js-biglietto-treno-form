@@ -24,8 +24,8 @@ function submitForm() {
     let ranodmNumSmall = Math.floor(Math.random() * 10) +1;
     let randomNumBig = Math.floor(Math.random() * 89999) +1;
 
-    let ticketPrice = 0.21 * km;
-    let tPriceDiscount20 = (ticketPrice * 0.8).toFixed(2);
+    let ticketPrice = (0.21 * km).toFixed(2);
+    let tPriceDiscount20 = (ticketPrice * 0.8).toFixed();
     let tPriceDiscount40 = (ticketPrice * 0.6).toFixed(2);
 
     document.getElementById("nameBro").innerHTML = nameUser;
@@ -35,12 +35,15 @@ function submitForm() {
     if (ageGroup == "minor"){
         
         document.getElementById("response").innerHTML = tPriceDiscount20 + "€";
+        document.getElementById("ticketType").innerHTML = "Discounted Ticket" + " - Minor";
     } else if (ageGroup == "senior"){
         
         document.getElementById("response").innerHTML = tPriceDiscount40 + "€";
+        document.getElementById("ticketType").innerHTML = "Discounted Ticket" + " - Senior";
     } else{
         
         document.getElementById("response").innerHTML = ticketPrice + "€";
+        document.getElementById("ticketType").innerHTML = "Standard Ticket";
     }
     
 }
