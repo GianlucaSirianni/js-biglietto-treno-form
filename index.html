@@ -10,43 +10,67 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <form>
-        <label for="nameUser">Name:</label>
-        <input type="text" id="nameUser" name="nameUser" placeholder="Write your Name">
 
-        <label for="km">Km:</label>
-        <input type="text" id="km" name="km" placeholder="How many Km you need?">
+        <h1 class="calculateTitle">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-        <label for="cars">Choose your age bracket:</label>
+        <form>
+            <div class="sectionContainer">
 
-        <select id="ageGroup">
-            <option value="minor">I'm a Minor (0-17yo)</option>
-            <option value="adult">I'm an Adult (18-65yo)</option>
-            <option value="senior">I'm a Senior (>65yo)</option>
-        </select>
+                <div class="formSection">
+                    <label for="nameUser">Name:</label>
+                    <input type="text" id="nameUser" name="nameUser" placeholder="Write your Name">
+                </div>
 
-        <a class="submitButton" href="#" onclick="submitForm()"> Submit Here</a>
+                <div class="formSection">
+                    <label for="km">Km:</label>
+                    <input type="text" id="km" name="km" placeholder="How many Km you need?">
+                </div>
 
-    </form>
+                <div class="formSection">
+                    <label for="cars">Age bracket:</label>
+                    <select id="ageGroup">
+                        <option value="minor">I'm a Minor (0-17yo)</option>
+                        <option value="adult">I'm an Adult (18-65yo)</option>
+                        <option value="senior">I'm a Senior (>65yo)</option>
+                    </select>
+                </div>
 
-    <h3 id="numeroacaso1">
+            </div>
 
-    </h3>
+            <div class="buttons">
+                <div>
+                    <a class="submitButton" href="#" onclick="submitForm()"> Submit Here</a>
+                </div>
+                <div>
+                    <a class="submitButton" href="#" onclick="submitForm()"> Submit Here</a>
+                </div>
+            </div>
 
-    <h3 id="numeroacaso2">
-        
-    </h3>
 
-    <h2 id="nameBro">
 
-    </h2>
 
-    <h1 id="response">
+        </form>
 
-    </h1>
-    
-    
+        <h3 id="numeroacaso1">
+
+        </h3>
+
+        <h3 id="numeroacaso2">
+
+        </h3>
+
+        <h2 id="nameBro">
+
+        </h2>
+
+        <h1 id="response">
+
+        </h1>
+
+    </div>
+
     <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 

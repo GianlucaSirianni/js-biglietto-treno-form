@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 0, 251);
+    height: 100vh;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.calculateTitle{
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sectionContainer{
+    display: flex;
+    justify-content: space-around;
+   
+    
+    
+    
+}
+
+form{
+    border-radius: 25px;
+    background-color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.formSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.formSection label{
+    margin-bottom: 1rem;
+    color: red;
+}
+
+input, select{
+    border-color: red;
+    padding: 5px;
+    text-align: center;
+}
+
+.buttons{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
